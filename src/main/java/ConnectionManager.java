@@ -16,7 +16,7 @@ public class ConnectionManager {
 
     private ConnectionManager() throws IOException {
         dbProperties = new Properties();
-        dbProperties.load(new FileInputStream("database.properties"));
+        dbProperties.load(new FileInputStream("./src/main/resources/database.properties"));
     }
 
     public static ConnectionManager getInstance() throws IOException {
